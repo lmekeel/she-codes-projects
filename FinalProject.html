@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peronal Styler</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: linear-gradient(#c5e2e6, #85b7be);
+        border: 1px solid black;
+        border-radius: 6px;
+        color: white;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px black;
+        margin-top: 0px;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 0;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/773/original/5.png?1638080056");
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        padding: 1px 33px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: #c5e2e6;
+        border-radius: 4px;
+        padding: 10px 15px;
+        transition: all 200ms ease-out;
+        box-shadow: 2px 3px 5px rgb(117, 110, 110, 0.4);
+      }
+      button:hover {
+        background: white;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        padding-bottom: 20px;
+        margin: 15px auto;
+        border-radius: 6px;
+        max-width: 70%;
+      }
+      a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #08a9be;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        border: 1px solid white;
+        background-color: white;
+        border-radius: 6px;
+        padding: 15px;
+      }
+      .footer {
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Personal Styler</h1>
+      <h2>try a new style today 😎</h2>
+      <hr />
+      <p>
+        Sometimes defining personal style can be difficult. Try this daily style
+        randomizer until you find the
+        <strong>style</strong> <em>that's just right for you! </em>
+      </p>
+      <button>Pick Style</button>
+      <div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/774/original/9-Personal-Styles.png?1638080064"
+          alt="Personal style categories"
+        />
+      </div>
+      <p>
+        In the fashion world, “style” is usually shorthand for “personal style,”
+        or the way an individual expresses themselves through aesthetic choices
+        such as their clothing, accessories, hairstyle, and the way they put an
+        outfit together.
+        <span>
+          <a
+            href="https://www.masterclass.com/articles/how-to-find-your-personal-style"
+            target="_blank"
+            >Click here
+          </a>
+          to learn more about defining your style!
+        </span>
+      </p>
+      <div class="footer">This page was created by Lily Mekeel</div>
+    </div>
+    <script>
+      let myArray = [
+        "Classic",
+        "Glam",
+        "Boho",
+        "Casual",
+        "Edgy",
+        "Preppy",
+        "Minimalist",
+        "Romantic",
+        "Athleisure",
+      ];
+      var a = Math.floor(Math.random() * myArray.length);
+
+      function random() {
+        let confirm = prompt("Are you ready for your style? Yes/No");
+        confirm = confirm.toLowerCase();
+        confirm = confirm.trim();
+
+        if (confirm === "yes") {
+          alert(myArray[a]);
+          location.reload();
+        } else {
+          alert("Come back when you're ready to try a new style!");
+        }
+      }
+
+      let styleButton = document.querySelector("button");
+      styleButton.addEventListener("click", random);
+    </script>
+  </body>
+</html>

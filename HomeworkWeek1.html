@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: #1964D6;
+      font-size: 34px;
+      line-height: 48px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 4px;
+    }
+    ul {
+      text-align: center;
+      list-style-type: none;
+      padding: 10px;
+      font-size: 19px;
+      margin: 18px, 0px, 15px, 0px;
+    }
+    li {
+      padding: 8px;
+      max-width: 400px;
+      height: 104px;
+      margin: 0 auto;
+      line-height: 45px;
+      font-family: monospace;
+      transition: all 200ms ease-in-out;
+    }
+    li:hover {
+      background: rgb(254, 251, 239);
+      border-radius: 10px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #1964D6;
+      padding: 16px 24px;
+      line-height: 22px;
+      color: white;
+      background-color: #1964D6;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: all 150ms ease-in-out;
+    }
+    button:hover {
+      cursor: pointer;
+      background: transparent;
+      color: #1964D6;
+      
+    }
+    .todays-high-low {
+      font-size: 34px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .high-degree {
+      font-weight: bold;
+    }
+    .sunshine-emoji {
+      text-align: center;
+      font-size: 35px;
+    }
+    .day {
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .coded-by {
+      font-size: 18px;
+      text-align: center;
+      font-family: monospace;
+      font-weight: lighter;
+      color: #4D4D4D;
+    }
+    .degrees {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sunshine-emoji">🌤</div>
+  <h1>Currently 21° in Tokyo</h1>
+  <div class="todays-high-low">13° / <span class="high-degree"> 23°</span></div>
+ <ul>
+   <li>
+     <div class="day">🌧Tomorrow</div>
+     <div class="degrees">10° / <span class="high-degree">22°</span></div>
+   </li>
+   <li>
+     <div class="day">🌥Saturday</div>
+     <div class= "degrees">15° / <span class="high-degree">17°</span></div>
+   </li>
+   <li>
+     <div class="day">☀️Sunday</div>
+     <div class="degrees">25° / <span class="high-degree">28°</span></div>
+   </li>
+ </ul>
+ <button>
+   Change city
+ </button>
+ <div class="coded-by">
+   Coded by Matt Delac
+ </div>
+</body>
+</html>
